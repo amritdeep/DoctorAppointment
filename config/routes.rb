@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :pets
   get 'home/index'
 
   resources :owners
