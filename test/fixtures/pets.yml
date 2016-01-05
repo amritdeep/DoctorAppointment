@@ -2,7 +2,7 @@
 
 one:
   name: MyString
-  type: 
+  types: MyString
   breed: MyString
   age: MyString
   weight: MyString
@@ -10,7 +10,7 @@ one:
 
 two:
   name: MyString
-  type: 
+  types: MyString
   breed: MyString
   age: MyString
   weight: MyString

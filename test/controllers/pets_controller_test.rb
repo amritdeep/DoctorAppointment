@@ -18,7 +18,7 @@ class PetsControllerTest < ActionController::TestCase
 
   test "should create pet" do
     assert_difference('Pet.count') do
-      post :create, pet: { age: @pet.age, breed: @pet.breed, date_of_last_vist: @pet.date_of_last_vist, name: @pet.name, type: @pet.type, weight: @pet.weight }
+      post :create, pet: { age: @pet.age, breed: @pet.breed, date_of_last_vist: @pet.date_of_last_vist, name: @pet.name, types: @pet.types, weight: @pet.weight }
     end
 
     assert_redirected_to pet_path(assigns(:pet))
@@ -35,7 +35,7 @@ class PetsControllerTest < ActionController::TestCase
   end
 
   test "should update pet" do
-    patch :update, id: @pet, pet: { age: @pet.age, breed: @pet.breed, date_of_last_vist: @pet.date_of_last_vist, name: @pet.name, type: @pet.type, weight: @pet.weight }
+    patch :update, id: @pet, pet: { age: @pet.age, breed: @pet.breed, date_of_last_vist: @pet.date_of_last_vist, name: @pet.name, types: @pet.types, weight: @pet.weight }
     assert_redirected_to pet_path(assigns(:pet))
   end
 
